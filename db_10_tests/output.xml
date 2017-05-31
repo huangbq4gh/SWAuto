@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170531 00:22:49.325" generator="Robot 3.0.2 (Python 2.7.8 on darwin)">
+<suite source="/Users/bingqinghuang/Documents/RobotFrameworkSpace/SWAutomation/db_10_tests/db10_cycle.robot" id="s1" name="Db10 Cycle">
+<test id="s1-t1" name="initialization">
+<kw name="Close All Startads" library="ScreenVerification">
+<msg timestamp="20170531 00:22:53.996" level="INFO">taking screenshot
+getting device screenshot and save at given location</msg>
+<msg timestamp="20170531 00:22:53.998" level="FAIL">TypeError: bufsize must be an integer</msg>
+<status status="FAIL" endtime="20170531 00:22:53.998" starttime="20170531 00:22:49.458"></status>
+</kw>
+<status status="FAIL" endtime="20170531 00:22:53.999" critical="yes" starttime="20170531 00:22:49.457">TypeError: bufsize must be an integer</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20170531 00:22:54.000" starttime="20170531 00:22:49.328"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Db10 Cycle" pass="0">Db10 Cycle</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
