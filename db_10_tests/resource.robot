@@ -42,8 +42,9 @@ ${StartAppY}      660
 *** Keywords ***
 Start app
     Input Tap  ${StartAppX}  ${StartAppY}
-    Sleep  60
+    Sleep  90
     Close All Startads
+    Input Tap  1  1
 
 Start DB10
     Input Tap  ${BattleBtnX}  ${BattleBtnY}
@@ -51,18 +52,14 @@ Start DB10
     Input Tap  ${DragonLairX}  ${DragonLairY}
     Input Tap  ${Level10X}  ${Level10Y}
     Input Tap  ${DStartBtnX}  ${DStartBtnY}
-    Sleep  4 minutes 30 seconds
-    Input Tap  500  500
-    Input Tap  500  500
-    Sleep  5
+    Sleep  5 minutes
+    Handle Db Run Rewards
 
 
 Restart DB10
-    Input Tap  ${ReplayBtnX}  ${ReplayBtnX}
+    Input Tap  ${ReplayBtnX}  ${ReplayBtnY}
     Input Tap  ${DStartBtnX}  ${DStartBtnY}
-    Sleep  4 minutes 30 seconds
-    Input Tap  500  500
-    Input Tap  500  500
-    Sleep  5
+    Sleep  5 minutes
+    Handle Db Run Rewards
 
 

@@ -9,8 +9,10 @@ Resource          resource.robot
 #db10_initialization
 #    Start DB10
 #
-#dungeon_restart
-#    Restart DB10
+dungeon_restart
+    Restart DB10
+    Restart DB10
 
-initialization
-    Close All Startads
+
+#db_run
+#    Start DB10

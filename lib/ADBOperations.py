@@ -18,11 +18,11 @@ class ADBOperations:
 
     def get_current_screen(self, save_file_name, save_location):
         print 'taking screenshot'
-        # subprocess.call('adb -s %s shell screencap -p /sdcard/%s' % self.device_name, save_file_name)
+        # subprocess.call('adb -s %s shell screencap -p /sdcard/%s' % (self.device_name, save_file_name))
         subprocess.call(["adb", "-s", self.device_name, "shell", "screencap", "-p", "/sdcard/swauto/" + save_file_name])
         print 'getting device screenshot and save at given location'
-        # subprocess.call('adb -s %s pull /sdcard/%s %s' % self.device_name, save_file_name, save_location)
-        subprocess.call(["adb", "-s", self.device_name, "pull", "/sdcard/swauto/" + save_file_name], save_location)
+        # subprocess.call('adb -s %s pull /sdcard/%s %s' % (self.device_name, save_file_name, save_location))
+        subprocess.call(["adb", "-s", self.device_name, "pull", "/sdcard/swauto/" + save_file_name, save_location])
 
     def get_process(self, process_name):
         print 'get process info'

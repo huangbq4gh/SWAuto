@@ -1,20 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170531 00:22:49.325" generator="Robot 3.0.2 (Python 2.7.8 on darwin)">
+<robot generated="20170601 02:05:20.567" generator="Robot 3.0.2 (Python 2.7.8 on darwin)">
 <suite source="/Users/bingqinghuang/Documents/RobotFrameworkSpace/SWAutomation/db_10_tests/db10_cycle.robot" id="s1" name="Db10 Cycle">
-<test id="s1-t1" name="initialization">
-<kw name="Close All Startads" library="ScreenVerification">
-<msg timestamp="20170531 00:22:53.996" level="INFO">taking screenshot
-getting device screenshot and save at given location</msg>
-<msg timestamp="20170531 00:22:53.998" level="FAIL">TypeError: bufsize must be an integer</msg>
-<status status="FAIL" endtime="20170531 00:22:53.998" starttime="20170531 00:22:49.458"></status>
+<test id="s1-t1" name="dungeon_restart">
+<kw name="Restart DB10" library="resource">
+<kw name="Input Tap" library="ADBOperations">
+<arguments>
+<arg>${ReplayBtnX}</arg>
+<arg>${ReplayBtnY}</arg>
+</arguments>
+<msg timestamp="20170601 02:05:23.099" level="INFO">sending tap event to device</msg>
+<status status="PASS" endtime="20170601 02:05:23.100" starttime="20170601 02:05:21.415"></status>
 </kw>
-<status status="FAIL" endtime="20170531 00:22:53.999" critical="yes" starttime="20170531 00:22:49.457">TypeError: bufsize must be an integer</status>
+<kw name="Input Tap" library="ADBOperations">
+<arguments>
+<arg>${DStartBtnX}</arg>
+<arg>${DStartBtnY}</arg>
+</arguments>
+<msg timestamp="20170601 02:05:24.748" level="INFO">sending tap event to device</msg>
+<status status="PASS" endtime="20170601 02:05:24.749" starttime="20170601 02:05:23.100"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 minutes</arg>
+</arguments>
+<msg timestamp="20170601 02:10:24.751" level="INFO">Slept 5 minutes</msg>
+<status status="PASS" endtime="20170601 02:10:24.751" starttime="20170601 02:05:24.749"></status>
+</kw>
+<kw name="Handle Db Run Rewards" library="ScreenVerification">
+<msg timestamp="20170601 02:10:43.867" level="INFO">taking screenshot
+getting device screenshot and save at given location
+(255, 255, 51, 255)
+sending tap event to device
+sending tap event to device
+taking screenshot
+getting device screenshot and save at given location
+(190, 132, 66, 255)
+is rune
+sending tap event to device</msg>
+<status status="PASS" endtime="20170601 02:10:43.869" starttime="20170601 02:10:24.752"></status>
+</kw>
+<status status="PASS" endtime="20170601 02:10:43.869" starttime="20170601 02:05:21.415"></status>
+</kw>
+<kw name="Restart DB10" library="resource">
+<kw name="Input Tap" library="ADBOperations">
+<arguments>
+<arg>${ReplayBtnX}</arg>
+<arg>${ReplayBtnY}</arg>
+</arguments>
+<msg timestamp="20170601 02:10:45.778" level="INFO">sending tap event to device</msg>
+<status status="PASS" endtime="20170601 02:10:45.778" starttime="20170601 02:10:43.871"></status>
+</kw>
+<kw name="Input Tap" library="ADBOperations">
+<arguments>
+<arg>${DStartBtnX}</arg>
+<arg>${DStartBtnY}</arg>
+</arguments>
+<msg timestamp="20170601 02:10:47.537" level="INFO">sending tap event to device</msg>
+<status status="PASS" endtime="20170601 02:10:47.538" starttime="20170601 02:10:45.779"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5 minutes</arg>
+</arguments>
+<status status="FAIL" endtime="20170601 02:11:17.329" starttime="20170601 02:10:47.538"></status>
+</kw>
+<status status="FAIL" endtime="20170601 02:11:17.329" starttime="20170601 02:10:43.870"></status>
+</kw>
+<status status="FAIL" endtime="20170601 02:11:17.330" critical="yes" starttime="20170601 02:05:21.414">Execution terminated by signal</status>
 </test>
 <doc>A test suite with a single test for valid login.
 
 This test has a workflow that is created using keywords in
 the imported resource file.</doc>
-<status status="FAIL" endtime="20170531 00:22:54.000" starttime="20170531 00:22:49.328"></status>
+<status status="FAIL" endtime="20170601 02:11:17.333" starttime="20170601 02:05:20.570"></status>
 </suite>
 <statistics>
 <total>
